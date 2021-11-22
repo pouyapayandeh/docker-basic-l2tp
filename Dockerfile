@@ -10,6 +10,6 @@ COPY ./etc/ppp/options.xl2tpd /etc/ppp/options.xl2tpd
 COPY entrypoint.sh /usr/bin/entrypoint
 RUN chmod 0700 /usr/bin/entrypoint
 
-EXPOSE 500/udp 4500/udp
+EXPOSE 1701/udp
 
 CMD ["entrypoint"]
