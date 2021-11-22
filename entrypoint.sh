@@ -17,7 +17,7 @@ iptables -A INPUT -i ppp+ -j ACCEPT
 iptables -A OUTPUT -o ppp+ -j ACCEPT
 iptables -A FORWARD -i ppp+ -j ACCEPT
 iptables -A FORWARD -o ppp+ -j ACCEPT
-iptables -I FORWARD -s 192.168.1.0/24 -j ACCEPT
+iptables -I FORWARD -s 192.168.31.0/24 -j ACCEPT
 
 rand(){
     str=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 10 | head -n 1)
